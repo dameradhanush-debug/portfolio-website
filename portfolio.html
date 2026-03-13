@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dhanush | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #4e73df, #26d8de);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #222;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #1cc88a;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color:#000000;
+        }
+
+        /* About */
+        #about p {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Skills */
+        #skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        #skills li {
+            background: #4e73df;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        #skills li:hover {
+            background: #1cc88a;
+            transform: scale(1.05);
+        }
+
+        /* Projects */
+        .project-card {
+            background: white;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            background: #4e73df;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .project-card a:hover {
+            background: #1cc88a;
+        }
+
+        /* Education Table */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: #4e73df;
+            color: white;
+        }
+
+        /* Contact Form */
+        form {
+            max-width: 400px;
+            margin: auto;
+            text-align: left;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #4e73df;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1cc88a;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            #skills ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Damera Dhanush</h1>
+    <p>Web Developer | Student</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate web development student with basic knowledge of
+        HTML, CSS, JavaScript, and Java. I enjoy creating simple and
+        responsive websites.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (Basics)</li>
+        <li>Java</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <a href="images/portfolio.png" target="_blank">
+            <img src="images/portfolio.png" alt="Explore Incredible India project preview">
+        </a>
+        <h3>Explore Incredible India</h3>
+        <p>Travel-style website with a full background image, smooth scrolling, and section-based layout.</p>
+        <a href="index.html" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Business Website</h3>
+        <p>Simple business website layout with forms and tables.</p>
+        <a href="#">View Project</a>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+
+    <table>
+        <tr>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>B.Tech</td>
+            <td>KL University</td>
+            <td>2025 - 2029</td>
+        </tr>
+        <tr>
+            <td>Intermediate</td>
+            <td>Sri Chaitanya jr kalasala</td>
+            <td>2022 - 2024</td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="return showMessage()">
+        <label>Name:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Message:</label>
+        <textarea rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Damera Dhanush | Portfolio</p>
+</footer>
+
+</body>
+</html>
